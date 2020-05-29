@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh; 
+    margin: 0;
+    padding: 0;
+}
+
+#map{
+    width: 100%;
+    height: 100%;
+}
+
+.title{
+    position:  absolute;
+    z-index: 100;
+    font-size: 35px;
+    margin-left: 20px;
+    top: 70;
+    font-weight: italics;
+    color:white;
+}
+
+.search-container{
+    position: absolute;
+    z-index: 100;
+    top: 140px;
+    left: 20px;
+    width: 350px;
+    height: 40px;
+    /*background-color: #454E53;*/
+            background-image:linear-gradient(to top right,#04d6dd,#f606ff);
+
+    border-radius: 30px;
+    display:flex;
+    border-color: black;
+}
+.search-container .search {
+    flex-grow:1 ;
+    text-align: center;
+    display: flex;
+    padding-left:20px;
+    padding-right: 20px;
+    
+}
+.search-container input{
+    width: 100%;
+    font-size: 25px;
+    /*background-color: #454E53;*/
+        background-image:linear-gradient(to top right,#04d6dd,#f606ff);
+
+    border: blue;
+    color: black;
+    border-radius: 30px;
+}
+
+.search-container input:focus{
+    outline: none;
+
+}
+
+.search i{
+    font-size:15px;
+    color: white;
+    margin-top: 15px;
+}
+
+hr{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+.covid-list-container {
+    width: 400px;
+    position: absolute;
+    z-index: 100;
+    display: flex;
+    background-color:linear-gradient(to top right,#04d6dd,#f606ff);
+    left:10px;
+    top:190px;
+    border-radius:30px;
+    bottom:20px;
+    overflow-y: scroll;
+    padding-left: 20px;
+
+}
+button:hover{
+    background-image:grey;
+    z-index: -1;
+        /*color:red;*/
+}
+
+.covid-number{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    color: darkblue;
+    border-radius: 50%;
+    font-size:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    /*padding-right: 10px;*/
+}
+.covid-container{
+    display: flex;
+    padding-left: 0px;
+    line-height: 1px;
+    
+}
+
+.covid-info-container{
+    flex-grow: 1;
+}
+
+.covid-number-container{
+    display: flex;
+    margin: 0px;
+    margin-top: 30px;
+    transform: translateX(-35px);
+    /*padding-right: 150px;*/
+    justify-content: center;
+    align-items: center;
+} 
+.covid-country{
+    /*padding-top: 30px;*/
+    padding-right: 130px;
+    padding-left: 20px;
+    display: block;
+    color: cornsilk;
+
+}
+span{
+    color: white;
+    font-size: 20px;
+    line-height: 2px;
+}
+a{
+    text-decoration:none;
+}
+
+button{
+    /*background-color: black;*/
+        background-image:linear-gradient(to top right,#04d6dd,#f606ff);
+
+}
+p{
+font-size: 18px;
+}
+.covid-info-window{
+    line-height: 1px;
+    padding: 3px;
+    min-width: 300px;
+    font-size: 18px;
+    padding: 8px;
+}
+.covid-info-country{
+    align-items: center;
+        border-bottom: 1px solid #00000029;
+
+}
